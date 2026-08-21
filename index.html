@@ -11,21 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body data-page="support">
   <div class="bg-rings" aria-hidden="true"></div>
 
   <header>
     <div class="wrap header-inner">
       <a class="brand" href="index.html">
-        <img src="assets/app-icon.png" alt="DiskTone app icon" width="44" height="44">
+        <img src="assets/app-icon.png" alt="DiskTone app icon" width="44" height="44" data-i18n-alt="brand.alt">
         <span class="brand-name">DiskTone</span>
       </a>
-      <nav aria-label="Site navigation">
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Site navigation" data-i18n-aria="nav.aria">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" data-i18n-aria="lang.aria">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh-Hans" aria-pressed="false">简体</button>
+          <button type="button" data-lang="zh-Hant" aria-pressed="false">繁體</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -33,76 +40,76 @@
     <div class="wrap">
       <section class="hero" aria-labelledby="hero-title">
         <img class="hero-icon" src="assets/app-icon.png" alt="" width="96" height="96">
-        <p class="hero-eyebrow">Technical Support</p>
-        <h1 id="hero-title">We're here to <em>help</em></h1>
-        <p class="hero-lead">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow.support">Technical Support</p>
+        <h1 id="hero-title" data-i18n-html="hero.title.support">We're here to <em>help</em></h1>
+        <p class="hero-lead" data-i18n="hero.lead.support">
           Welcome to the official DiskTone support page. Find answers to common questions or reach out to our team directly.
         </p>
       </section>
 
       <section id="about" aria-labelledby="about-title">
-        <p class="section-label">About DiskTone</p>
-        <h2 id="about-title">Music on your device, beautifully played</h2>
-        <p class="section-intro">
+        <p class="section-label" data-i18n="about.label">About DiskTone</p>
+        <h2 id="about-title" data-i18n="about.title">Music on your device, beautifully played</h2>
+        <p class="section-intro" data-i18n="about.intro">
           DiskTone is a local music player for iOS. Browse your system music library, download tracks from direct audio links, and enjoy playback with background audio and lock-screen controls — no account required.
         </p>
         <div class="card-grid">
           <article class="card">
             <div class="card-icon" aria-hidden="true">🎵</div>
-            <h3>System Music Library</h3>
-            <p>With your permission, browse and play songs, albums, and artists from your device's music library using native iOS playback.</p>
+            <h3 data-i18n="about.card1.title">System Music Library</h3>
+            <p data-i18n="about.card1.text">With your permission, browse and play songs, albums, and artists from your device's music library using native iOS playback.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">⬇️</div>
-            <h3>Direct Link Downloads</h3>
-            <p>Paste an HTTP/HTTPS link to an MP3, M4A, or WAV file to download it into the app for offline playback.</p>
+            <h3 data-i18n="about.card2.title">Direct Link Downloads</h3>
+            <p data-i18n="about.card2.text">Paste an HTTP/HTTPS link to an MP3, M4A, or WAV file to download it into the app for offline playback.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">🔒</div>
-            <h3>Privacy First</h3>
-            <p>Music stays on your device. No account, no cloud sync, no analytics, and no parsing of music services or web pages.</p>
+            <h3 data-i18n="about.card3.title">Privacy First</h3>
+            <p data-i18n="about.card3.text">Music stays on your device. No account, no cloud sync, no analytics, and no parsing of music services or web pages.</p>
           </article>
         </div>
       </section>
 
       <section id="faq" aria-labelledby="faq-title">
-        <p class="section-label">Help Center</p>
-        <h2 id="faq-title">Frequently asked questions</h2>
-        <p class="section-intro">Quick answers to the most common support requests.</p>
+        <p class="section-label" data-i18n="faq.label">Help Center</p>
+        <h2 id="faq-title" data-i18n="faq.title">Frequently asked questions</h2>
+        <p class="section-intro" data-i18n="faq.intro">Quick answers to the most common support requests.</p>
         <div class="faq-list">
           <details>
-            <summary>How do I add music to DiskTone?</summary>
-            <div class="faq-answer">
+            <summary data-i18n="faq.q1">How do I add music to DiskTone?</summary>
+            <div class="faq-answer" data-i18n-html="faq.a1">
               There are two ways: (1) grant access to your system music library so DiskTone can browse and play existing tracks, or (2) tap the download button in the library and paste a direct link to an MP3, M4A, or WAV file. DiskTone does not support music platform links or general web page parsing.
             </div>
           </details>
           <details>
-            <summary>Which audio formats are supported?</summary>
-            <div class="faq-answer">
+            <summary data-i18n="faq.q2">Which audio formats are supported?</summary>
+            <div class="faq-answer" data-i18n-html="faq.a2">
               For direct downloads, DiskTone supports <strong>MP3, M4A, and WAV</strong> files linked by a direct HTTP/HTTPS URL. For your system music library, available formats depend on what iOS already stores on your device.
             </div>
           </details>
           <details>
-            <summary>Why can't I download from a music platform link?</summary>
-            <div class="faq-answer">
+            <summary data-i18n="faq.q3">Why can't I download from a music platform link?</summary>
+            <div class="faq-answer" data-i18n-html="faq.a3">
               DiskTone only accepts direct links that point to an audio file (for example, ending in .mp3, .m4a, or .wav). It cannot parse Spotify, Apple Music, YouTube, or other streaming or web pages. Use a URL that downloads the file directly.
             </div>
           </details>
           <details>
-            <summary>Does DiskTone work offline?</summary>
-            <div class="faq-answer">
+            <summary data-i18n="faq.q4">Does DiskTone work offline?</summary>
+            <div class="faq-answer" data-i18n="faq.a4">
               Yes. Playback of your system library and previously downloaded tracks works without an internet connection. Downloading new files requires network access; you can choose whether cellular data is allowed in Settings.
             </div>
           </details>
           <details>
-            <summary>How do I report a bug or request a feature?</summary>
-            <div class="faq-answer">
+            <summary data-i18n="faq.q5">How do I report a bug or request a feature?</summary>
+            <div class="faq-answer" data-i18n-html="faq.a5">
               Email us at <a href="mailto:dengcheez@gmail.com">dengcheez@gmail.com</a> with a description of the issue, your iOS version, and device model. Screenshots or screen recordings are helpful.
             </div>
           </details>
           <details>
-            <summary>How can I delete my data?</summary>
-            <div class="faq-answer">
+            <summary data-i18n="faq.q6">How can I delete my data?</summary>
+            <div class="faq-answer" data-i18n-html="faq.a6">
               Delete individual downloaded tracks within the app, or uninstall DiskTone to remove all downloaded files, local indexes, and app settings. DiskTone does not maintain a remote account, so no server-side deletion is needed. See our <a href="privacy.html">Privacy Policy</a> for details.
             </div>
           </details>
@@ -111,8 +118,8 @@
 
       <section id="contact" aria-labelledby="contact-title">
         <div class="contact-panel">
-          <h2 id="contact-title">Still need help?</h2>
-          <p>Our support team typically responds within 1–2 business days. Include your device model and iOS version for faster assistance.</p>
+          <h2 id="contact-title" data-i18n="contact.title">Still need help?</h2>
+          <p data-i18n="contact.text">Our support team typically responds within 1–2 business days. Include your device model and iOS version for faster assistance.</p>
           <a class="contact-email" href="mailto:dengcheez@gmail.com">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
@@ -120,7 +127,7 @@
             </svg>
             dengcheez@gmail.com
           </a>
-          <p class="contact-note">DiskTone Support · Available in English and 中文</p>
+          <p class="contact-note" data-i18n="contact.note">DiskTone Support · English, 简体中文 & 繁體中文</p>
         </div>
       </section>
     </div>
@@ -128,12 +135,14 @@
 
   <footer>
     <div class="wrap">
-      <p>&copy; 2026 DiskTone. All rights reserved.</p>
+      <p data-i18n="footer.copyright">&copy; 2026 DiskTone. All rights reserved.</p>
       <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
         <a href="mailto:dengcheez@gmail.com">dengcheez@gmail.com</a>
       </div>
     </div>
   </footer>
+
+  <script src="assets/i18n.js"></script>
 </body>
 </html>

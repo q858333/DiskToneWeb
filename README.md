@@ -8,6 +8,7 @@ Official technical support page for **DiskTone** iOS app, used for App Store rev
 - `privacy.html` — Privacy Policy (English)
 - `assets/app-icon.png` — App icon
 - `assets/styles.css` — Shared styles
+- `assets/i18n.js` — Language switcher (EN / 简体 / 繁體)
 
 ## Local preview
 
@@ -22,6 +23,8 @@ Then visit http://localhost:8080
 ## Deployment
 
 Deploy as a static site to any host (GitHub Pages, Cloudflare Pages, Vercel, etc.).
+
+Language can be shared via URL: `?lang=zh-Hans` or `?lang=zh-Hant` (English omits the parameter).
 
 **App Store Connect:**
 - **Support URL** → deployed `index.html` URL

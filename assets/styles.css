@@ -93,6 +93,60 @@ header {
   gap: 16px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+}
+
+.lang-switch button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 7px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.lang-switch button:hover {
+  color: var(--brand);
+}
+
+.lang-switch button.is-active {
+  background: #fff;
+  color: var(--brand);
+  box-shadow: 0 1px 4px rgba(26, 18, 20, 0.08);
+}
+
+html[lang="zh-Hans"] body,
+html[lang="zh-Hant"] body {
+  font-family: var(--font-sans), "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+html[lang="zh-Hans"] .hero h1,
+html[lang="zh-Hant"] .hero h1,
+html[lang="zh-Hans"] h2,
+html[lang="zh-Hant"] h2 {
+  font-family: var(--font-sans), "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: 600;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -483,7 +537,7 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
-  nav {
+  .header-actions nav {
     display: none;
   }
 
